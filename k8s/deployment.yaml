@@ -17,5 +17,6 @@ spec:
         image: mon-image-flask:latest
         securityContext:
           runAsNonRoot: true
+          allowPrivilegeEscalation: false
         ports:
         - containerPort: 8080
